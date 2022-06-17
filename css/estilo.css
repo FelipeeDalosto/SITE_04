@@ -3,13 +3,17 @@
 	margin: 0;
 	padding: 0;
 }
-
+/*Formação do bady, caixa padrão*/
 body {
 	font-size: 16px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #f3f3f3;
+	background: #f8f8f8ad;
+}
+p{
+	color: black;
 }
 
+/*ID para definir o estilo da barra de navegação*/
 #navegacao {
 	background: rgb(179, 179, 179);
 	border-bottom: 1px solid #d8d8d8;
@@ -18,12 +22,16 @@ body {
 	width: 100%;
 	top: 0;
 }
+/*ID para definir o estilo do menu de navegação*/
 		#menu {
 			float: right;
 			padding: 25px 0;
+			margin-right: -190px;
+			
 		}
+		/*Define um padrao para o comando <a href="#"></a>*/
 		a {
-			text-decoration: none;
+			text-decoration: none; /*Remove o risco em baixo do hiperlink*/
 			padding: 5px 10px;
 		}
 		/*Links não visitados*/
@@ -44,22 +52,46 @@ body {
 		a:active {
 			color: #535353;
 		}
-	#logo {
-		float: left;
-	}
-	.T{
-		color: yellow;
-		font-size: 50px;
-		font-family: Copperplate, Papyrus, fantasy;
-		font-weight: bold;
-	}
-	.I{
-		color: blue;
-		font-size: 30px;
-		font-family: Copperplate, Papyrus, fantasy;
-	}
 
 
+		/*Define o estilo da DIV que ter os dados da logo*/
+		#logo {
+			float: left;
+
+		}
+		/*estilicação da letra T*/
+		.T{
+			color: yellow;
+			font-size: 90px;
+			font-family: Helvetica,arial,sans-serif;
+			font-weight: bold;
+			-webkit-text-stroke-color: black;
+			-webkit-text-stroke-width: 2px;
+			border: 7.5px solid rgb(179, 179, 179);
+			border-bottom-left-radius: 50px;
+			background-color: rgb(179, 179, 179);
+			margin-top: -120px;
+			position: fixed;
+			margin-left:35px;
+		}
+		/*estilização das demais letras*/
+		.I{
+			color: blue;
+			font-size: 50px;
+			font-family: Copperplate, Papyrus, fantasy;
+			border:  10px solid rgb(179, 179, 179);
+			border-bottom-right-radius: 50px;
+			background-color: rgb(179, 179, 179);
+			/* padding-top: -60px; */
+			margin-top: -100px;
+			position: fixed;
+			margin-left:80px;
+			
+
+		}
+
+
+		
 #area {
 	width: 720px;
 	margin: 0 auto;
@@ -67,42 +99,90 @@ body {
 
 
 
-#area-principal {
+#area-principal{
 	width: 900px;
-	margin: 70px auto 20px auto;
+	margin: 130px auto 20px auto;
+	margin-left: 280px;
+}
+.logo_summo{
+	float: right;
+}
+.logo_classe{
+	float: left;
+	margin:0 10px 5px 0;
 }
 
 
 
-#postagem {
+#druid{
 	background: #fff;
 	padding: 10px;
 	margin-bottom: 10px;
+	border: 5px solid rgb(39, 177, 4, 0.7);
+}
+#druid:hover{
+    border: 8px outset green;
+	border-image: linear-gradient(0deg, green, brown, green);
+	border-image-slice: 1;
 }
 
+
+#kina{
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 5px solid rgb(0, 0, 255, 0.7);
+}
+
+#kina:hover{
+    border: 10px solid transparent;
+	border-image: linear-gradient(0deg, blue, red, blue);
+	border-image-slice: 1;
+}
+
+#pala{
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 5px solid rgb(251, 255, 0, 0.7);
+}
+#pala:hover{
+    border: 8px outset rgb(251, 255, 0);
+	border-image: linear-gradient(0deg, yellow, gray, yellow);
+	border-image-slice: 1;
+}
+
+
+#sorc{
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 5px solid rgb(115, 1, 138, 0.7);
+}
+#sorc:hover{
+    border: 8px outset rgb(115, 1, 138);
+	border-image: linear-gradient(0deg, rgb(115, 1, 138), orange, rgb(115, 1, 138));
+	border-image-slice: 1;
+}
+
+
+
+
 h2 {
-	color: #b9c941;
+	color: black;
+	font-family: Copperplate, Papyrus, fantasy;
 }
 
 
 /*Classes*/
 
-.data-postagem {
-	font-size: 14px;
-	border-bottom: 1px solid #f4f4f4;
-	display: block;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-}
 
-.img-postagem{
-	float: left;
-	margin:0 10px 5px 0;
-}
 
-.postado {
-	border-left: 5px solid #d8d8d8;
-	padding-left: 5px;
-	display: block;
-	margin-top: 10px;
-}
+
+
+
+
+
+
+
+ 
